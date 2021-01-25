@@ -27,9 +27,10 @@ right: 16px;
 }
 #search-button{
     padding: 2px;
-    width: 10%;
+    width: 130px;
     margin:2% 1%;
     height: 35px;
+    font-size: 85%;
     border-radius: 2px;
     background-color: #f8f9fa;
     outline: none;
@@ -57,4 +58,34 @@ right: 16px;
 #images:hover,#advance-search:hover{
     border-radius: 5px;
     text-decoration: underline;
+}
+
+/* For small screens */
+@media screen and (max-width: 790px){
+    #search-field{
+        width: 60%;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 576px){
+    #search-field{
+        width: 70%;
+        height: 25px;
+        font-size: 13px;
+        margin-top: 10%;
+    }
+    #heading{
+        margin-top: 25vh;
+        width:33vh;
+    }
+    #search-button{
+        width: 110px;
+        margin:10% 1%;
+        height: 35px;
+        font-size: 85%;
+    }
+    #images,#advance-search{
+        font-size: 15px;
+        text-align: center;
+    }
 }

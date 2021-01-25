@@ -41,9 +41,12 @@
         color :#d93025;
         position: relative;
         border-bottom: 1px solid #ebebeb;
+        margin-top: 10vh;
+        margin-bottom: 1%;
     }
     .head-title label{
        margin-left: 2%;
+       margin-bottom: 1%;
        font-size: 16%;
        padding: 10px;
        border: 0;
@@ -77,18 +80,19 @@
     }
     #header-grey{
         background: #f1f1f1;
-        position:relative;
-        white-space: nowrap;
+        position:absolute;
         height: 60px;
-        margin-left: 0!important;
-        margin-right: 0!important;
+        width: 100vw;
         display: block;
+        top: 0;
+        left: 0;
     }
+   
     #search-button{
         padding: 1px;
-        width: 15%;
-        margin:2% 1%;
-        height: 30px;
+        width: 120px;
+        margin:2vw 1vw;
+        height: 35px;
         border-radius: 2px;
         background-color: #0275d8;
         font-weight: bold;
@@ -126,4 +130,50 @@
     }
     #images:hover,#advance-search:hover{
         text-decoration: underline;
+    }
+
+    /* For small screens */
+    @media screen and (max-width: 810px){
+        .textinput{
+            padding :8px 15px;
+            width: 210%;
+            font-size: 15px;
+            margin-top: 1%;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .innerform-heading{
+            display: inline-block;
+            font-size: 13px;
+            vertical-align: middle;
+            width: 50%;
+            }
+            
+        .innerform{
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 10px;
+        font-size: 13px;
+        }
+        .textinput{
+            padding :8px 15px;
+            width: 170%;
+            font-size: 15px;
+            margin-top: 5%;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+        }
+        #images,#advance-search{
+            font-size: 15px;
+        }
+        #heading-logo{
+            width: 13vh;
+            position :fixed;
+        }
     }
